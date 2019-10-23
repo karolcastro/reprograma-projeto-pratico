@@ -16,7 +16,8 @@ app.use( function(req,res,next){
 })
 
 app.use('/' , index)// tudo que tiver a / ele vai chamar para o index
-app.use('/funcionarios', funcionarios) // alunas que esta
+app.use('/funcionarios', funcionarios) 
+app.use('/tarefaConcluida', tarefaConcluida)
 
 
 //exportar o modulo// podemos usa -lo em outro lugar
