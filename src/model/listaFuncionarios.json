@@ -3,28 +3,28 @@
         "id": 1,
         "descricao": "atendente",
         "data": "21/10/2019",
-        "tarefaConcluida": true,
+        "tarefaConcluida": "true",
         "nomeColaborador": "Helena"
     },
     {
         "id": 2,
         "descricao": "desenvolvedor",
         "data": "21/10/2019",
-        "tarefaConcluida": true,
+        "tarefaConcluida": "false",
         "nomeColaborador": "Marina"
     },
     {
         "id": 3,
         "descricao": "gerente",
         "data": "21/10/2019",
-        "tarefaConcluida": true,
+        "tarefaConcluida": "false",
         "nomeColaborador": "Camila"
     },
     {
         "id": 4,
         "descricao": "analista",
         "data": "21/10/2019",
-        "tarefaConcluida": true,
+        "tarefaConcluida": "true",
         "nomeColaborador": "Milena"
     }
  ]
