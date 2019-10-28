@@ -8,6 +8,8 @@ const controller = require('../controles/funcionariosController')// esta importa
 router.get('/', controller.get)
 router.get('/tarefaConcluida',controller.getByCheck)
 router.get('/nomeColaborador', controller.getByNome)
+router.get('/dataInclusao', controller.getBydataInclusao)
+router.get('/diferencaData', controller.getBydiferencaData)
 router.get('/:id', controller.getById)
 
 module.exports = router

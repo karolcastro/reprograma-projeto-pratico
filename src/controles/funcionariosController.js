@@ -28,15 +28,30 @@ exports.getByCheck = (req,res) => {
 //Buscar tarefas somente de um determinado colaborador:
 exports.getByNome = (req,res) => {
 
-    const Nome = req.params.Nome();
-    console.log(Nome);
+    const Nome = req.params.Nome;
+    // console.log(Nome)
 
-    const nomeFun = funcionarios.filter( T => T.nomeColaborador == " ");
 
-    if (nomeFun.length == 0){
-        res.status(404).send(`nao encontrado ${Nome}`);
-        
-         } else{
+    const nomeFun = funcionarios.filter( T => T.Nome == Nome);
             res.status(200).send(nomeFun); 
-        }
+  
+    }
+
+    // //Buscar Tarefas por Data de Inclusão e apresentar da mais nova para mais antiga
+    
+    exports.getBydataInclusao = (req,res) => {
+
+        funcionarios.sort(function (a, b){
+            return new Date(a.dataInclusao) - new Date(b.dataInclusao);
+        });
+        // console.log(funcionarios)
+        res.status(200).send(funcionarios)
+    
+    }
+
+    //Calcular diferença entre data de início e data de conclusão e adicionar nova chave aos objetos
+    exports.getBydiferencaData = (req,res) => {
+        
+    const datas = funcionarios.map(item => new Date (funcionarios.dataInclusao), new Date(funcionarios.dataConclusao))
+    console.log (datas)
     }

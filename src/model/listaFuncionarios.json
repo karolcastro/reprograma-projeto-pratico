@@ -1,29 +1,33 @@
 [
     {
         "id": 1,
+        "dataInclusao": "07/29/2019",
+        "dataConclusao":"01/14/2019",
         "descricao": "atendente",
-        "data": "21/10/2019",
         "tarefaConcluida": "true",
         "nomeColaborador": "Helena"
     },
     {
         "id": 2,
+        "dataInclusao": "06/02/2019",
+        "dataConclusao":"10/16/2019",
         "descricao": "desenvolvedor",
-        "data": "21/10/2019",
         "tarefaConcluida": "false",
         "nomeColaborador": "Marina"
     },
     {
         "id": 3,
+        "dataInclusao": "09/11/2019",
+        "dataConclusao":"09/06/2019",
         "descricao": "gerente",
-        "data": "21/10/2019",
         "tarefaConcluida": "false",
         "nomeColaborador": "Camila"
     },
     {
         "id": 4,
+        "dataInclusao": "06/14/2019",
+        "dataConclusao":"10/16/2019",
         "descricao": "analista",
-        "data": "21/10/2019",
         "tarefaConcluida": "true",
         "nomeColaborador": "Milena"
     }
